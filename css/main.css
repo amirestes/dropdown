@@ -1,0 +1,18 @@
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   html {
+    color: #222;
+    font-size: 18px;
+    line-height: 1.4;
+    width: 375px;
+  }
+
+  body {
+    
+  }
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* */
