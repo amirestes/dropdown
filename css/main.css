@@ -10,9 +10,24 @@
   }
 
   body {
-    
+    font-size: 1em;
   }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-/* */
+/* Mobile Styling */
+.snap {
+  margin: 0;
+}
+.hero img {
+  width: 375px;
+  margin: 0;
+}
+figure {
+  margin: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
