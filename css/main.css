@@ -281,6 +281,39 @@ footer {
    Modify as content requires.
    ========================================================================== */
 
+@media only screen and (min-width: 1200px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .desktop {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .hero{
+    
+    margin: 0;
+    display: inline;
+  }
+  .hero img {
+    width: 480;
+  }
+  .text {
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .text h1{
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -1.11px;
+    align-self: left;
+  }
+}
+
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
