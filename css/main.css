@@ -108,8 +108,11 @@ textarea {
 
   .snap {
     margin: 16px;
-    width: 25%;
+    width: 90%;
     height: 35px;
+    display: flex;
+    justify-content: space-between;
+
   }
 
   .hero {
@@ -139,7 +142,7 @@ textarea {
     line-height: 26px;
     text-align: center;
     color: #686868;
-    margin: 0 16px 16px 16px;
+    margin: 0 16px 24px 16px;
   }
 
 button {
@@ -147,8 +150,6 @@ button {
   border-radius: 15px;
   height: 48px;
   width: 136px;
-  left: 0px;
-  top: 0px;
   border-radius: 15px;
   font-family: 'Epilogue';
   font-style: normal;
@@ -170,8 +171,28 @@ button {
 footer {
   display: flex;
   justify-content: center;
-  margin: 50px;
+  margin: 50px 16px 25px 16px;
+  flex-direction: column;
+  width: 100%;
 }
+
+.social{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 0 16px;
+}
+
+.social figure {
+  padding: 0 28px 0 0;
+}
+.attribution { 
+  font-size: 11px; 
+  text-align: center;
+  margin: 16px;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
