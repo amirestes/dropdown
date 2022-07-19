@@ -304,14 +304,21 @@ footer {
     width: 540px;
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: 0 125px 0 168px;
+    align-items: flex-start;
   }
+
   .text h1{
     font-size: 80px;
     line-height: 80px;
     letter-spacing: -1.11px;
-    align-self: left;
+    text-align: left;
   }
+
+  .text p {
+    text-align: left;
+  }
+
 }
 
 @media only screen and (min-width: 35em) {
