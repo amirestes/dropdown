@@ -184,7 +184,7 @@ footer {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  margin: 0 16px;
+  margin: 38px 16px;
 }
 
 .social figure {
@@ -342,6 +342,13 @@ footer {
 
   .hero-img {
     display: none;
+  }
+
+  .social{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 108px 16px;
   }
 }
 
