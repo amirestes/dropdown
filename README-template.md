@@ -16,8 +16,6 @@ This is a solution to the [Intro section with dropdown navigation challenge on F
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -46,6 +44,10 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
+
+Since the design used a different hero image between mobile and desktop and the placement wouldn't allow for the same Flexbox flow, I used media queries to show the correct image dependent on the screen size.
+
+I also started with the social div as a footer, but quickly realized it would be easier to match the design by moving that div into the same div as the text div. This made it easier to resize it on the desktop view but still allow it to be at the bottom of the mobile design.
 
 ### Built with
 
