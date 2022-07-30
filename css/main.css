@@ -184,10 +184,16 @@ textarea {
 
   #myLinks {
     display: none;
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #686868;
   }
 
   .snap {
-    margin: 16px;
+    margin: 16px 16px 67px 16px;
     width: 90%;
     height: 35px;
     display: flex;
@@ -204,6 +210,20 @@ textarea {
 
   li {
     padding-right: 40px;
+  }
+
+  #register {
+    background-color: transparent;
+    width: 104px;
+    height: 42px;
+    border: 1px solid black;
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #686868;
+    margin: 40px;
   }
 
   .hero {
@@ -417,8 +437,8 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    align-items: center;
-    margin: 0 120px;
+    align-items: flex-start;
+    margin: 75px 120px;
     
   }
   .hero{
@@ -455,6 +475,7 @@ footer {
     display: block;
     width: 480px;
     margin-right: 65px;
+    margin-left: 65px;
   }
 
   .hero-img {
@@ -465,7 +486,8 @@ footer {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    margin: 108px 16px;
+    margin: 75px 16px;
+    height: 500px;
   }
 }
 
