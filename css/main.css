@@ -106,12 +106,89 @@ textarea {
     margin: 0;
   }
 
+  .hamburger{
+    /* container for hamburger */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .hamburger-bars{
+    /* the first hamburger line: uses the relative position so the pseudo-elements will be positioned relative to this element the height determines the thickness of our line. The background color determines the color of the line */
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    border-radius: 30px;
+    
+  }
+
+  .hamburger-bars::before,
+  .hamburger-bars::after {
+    /* Creates the top and bottom line. */
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background-color: inherit;
+    border-radius: inherit;
+  }
+
+  .hamburger-bars::before {
+    top: -9px;
+  }
+/* The above and below code moves the bars so they are no longer overlapping */
+  .hamburger-bars::after {
+    top: 9px;
+  }
+
+  /* rotates lines to make it easier to animate the remaining lines */
+  .hamburger.open .hamburger-bars {
+    transform: rotate(45deg);
+  }
+
+  /* Hide the first element so that is cannot be seen the rotation 90 degrees to create a cross */
+  .hamburger.open .hamburger-bars::before {
+    top:0;
+  }
+  .hamburger.open .hamburger-bars::after {
+    top:0;
+    transform: rotate(-90deg);
+  }
+
+  /* Transitions*/
+  .hamburger.open .hamburger-bars {
+    transform: rotate(45deg);
+    transition: transform 200ms 0.12s ease;
+  }
+  
+  .hamburger.open .hamburger-bars::before {
+    top: 0;
+    transition: top 200ms ease;
+  }
+
+  .hamburger.open .hamburger-bars::after {
+    top: 0;
+    transform: rotate(-90deg);
+    transition: top 200ms ease,
+                transform 200ms ease 0.12s;
+  }
+
+  
   .snap {
     margin: 16px;
     width: 90%;
     height: 35px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-direction: row;
 
   }
 
