@@ -182,15 +182,28 @@ textarea {
                 transform 200ms ease 0.12s;
   }
 
+  #myLinks {
+    display: none;
+  }
 
   .snap {
     margin: 16px;
     width: 90%;
     height: 35px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: row;
+    align-items: baseline;
+  }
 
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+  }
+
+  li {
+    padding-right: 40px;
   }
 
   .hero {
@@ -372,6 +385,32 @@ footer {
   .snap{
     margin-top: 32px;
     margin-left: 41px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin: 0;
+  }
+
+  #myLinks {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  #about {
+    margin-right: 300px;
   }
   .desktop {
     display: flex;
