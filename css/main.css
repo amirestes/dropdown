@@ -106,6 +106,21 @@ textarea {
     margin: 0;
   }
 
+  .ham-nav{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    right: -125%;
+    top: 70px;
+    gap: 0;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .ham-nav.open {
+    right: 0;
+  }
+
   .hamburger{
     /* container for hamburger */
     display: flex;
@@ -401,7 +416,9 @@ footer {
     display: flex;
     flex-direction: column;
   }
-
+.ham-nav{
+  display: none;
+}
   .snap{
     margin-top: 32px;
     margin-left: 41px;

@@ -27,6 +27,25 @@
           <button class="hamburger">
             <span class="hamburger-bars"></span>
           </button>
+          <div class="ham-nav">
+            <ul>
+              <li>Features</li>
+              <!--
+              Todo List
+              Calendar
+              Reminders
+              Planning
+              -->
+              <li>Company</li>
+              <!--
+              History
+              Our Team
+              Blog
+              -->
+              <li>Careers</li>
+              <li>About</li>
+            </ul>
+          </div>
           <!-- the above code creates the hamburger menu using this instead of an image so it can be animated-->
           <div id="myLinks">
             <div id="about">
@@ -99,9 +118,11 @@
       </footer>
     <script>
       const menu = document.querySelector('.hamburger');
+      const navMenu = document.querySelector('.ham-nav');
 
       menu.addEventListener('click', () => {
         menu.classList.toggle('open');
+        navMenu.classList.toggle('open');
       });
     </script>
   </body>
