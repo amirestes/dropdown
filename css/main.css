@@ -111,12 +111,20 @@ textarea {
     display: flex;
     flex-direction: column;
     right: -125%;
-    top: 70px;
+    top: 0px;
+    width: 240px;
+    height: 780px;
     gap: 0;
     text-align: center;
     transition: 0.3s;
+    background-color: #fff;
   }
-
+  .ham-nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
   .ham-nav.open {
     right: 0;
   }
