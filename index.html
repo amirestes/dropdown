@@ -123,11 +123,17 @@
     <script>
       const menu = document.querySelector('.hamburger');
       const navMenu = document.querySelector('.ham-nav');
+      const close = document.querySelector('.btn-close');
 
       menu.addEventListener('click', () => {
         menu.classList.toggle('open');
         navMenu.classList.toggle('open');
       });
+
+      close.addEventListener('click', () => {
+        navMenu.classList.remove('open');
+        menu.classList.remove('open');
+      })
     </script>
   </body>
 </html>
